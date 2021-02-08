@@ -50,3 +50,13 @@ if(!function_exists('dbGetRow')) {
         return $data ?: [];
     }
 }
+
+if(!function_exists('dbEscape')) {
+
+    function dbEscape ($val){
+
+        $connection = $GLOBALS['connection'];
+
+        return mysqli_real_escape_string($connection, (string)htmlspecialchars(strip_tags($val)));
+    }
+}

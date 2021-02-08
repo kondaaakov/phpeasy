@@ -5,7 +5,7 @@
     font-size: 16px;
 }
 
-input, button {
+input, button, select {
     outline: none;
     background-color: rgba(0, 0, 0, 0);
     padding: 5px;
@@ -37,6 +37,7 @@ a {
 .btn {
     cursor: pointer;
     letter-spacing: 1.3px;
+    transition: all 0.3s;
 }
 
 .header {
@@ -54,6 +55,8 @@ a {
     font-size: 18px;
     font-weight: 900;
     color: white;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
 }
 
 .nav_link:hover {
@@ -134,12 +137,13 @@ a {
 
 .wrapper_block {
     background-color: white;
-    border: 3px solid #333333;
+    border: 5px solid #333333;
     padding: 10px;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 5px 5px #222;
 }
 
 .wrapper_top {
@@ -194,4 +198,263 @@ a {
 .views_text {
     font-size: 18px;
     font-weight: 600;
+}
+
+.error_msg {
+    font-size: 2em;
+}
+
+.news_block {
+    padding: 20px 15%;
+}
+
+.post {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.post_title {
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.post_title:hover {
+    color: #4c51ff;
+}
+
+.post_middle {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.post_img {
+    width: 25%;
+    margin-right: 15px;
+}
+
+.post_body {
+    font-size: 1.3em;
+}
+
+.post_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post_time {
+    font-size: 1.1em;
+    letter-spacing: 1.1px;
+}
+
+.post_link {
+    padding: 5px;
+    font-size: 1.1em;
+    letter-spacing: 1.1px;
+    border: 2px solid black;
+    box-shadow: 3px 3px #222;
+    transition: all 0.3s;
+}
+
+.post_link:hover {
+    color: #4c51ff;
+    border: 2px solid #4c51ff;
+    box-shadow: 3px 3px #3e42cc;
+}
+
+.calc_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc_form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc_input {
+    height: 64px;
+    width: 64px;
+    font-size: 1.5em;
+}
+
+.form_select {
+    height: 64px;
+    width: 64px;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.form_result {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.article {
+    padding: 20px 15%;
+}
+
+.article_header {
+    margin-bottom: 10px;
+}
+
+.article_title {
+    font-size: 2em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+.article_middle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.article_img {
+    width: 100%;
+}
+
+.article_text {
+    font-size: 1.3em;
+}
+
+.catalog_block {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    justify-items: center;
+}
+
+.product {
+    border: 1px solid black;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+}
+
+.product_img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.product_title {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+
+.product_title:hover {
+    color: #4c51ff;
+}
+
+.product_price {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.product_blog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item_img {
+    width: 45%;
+}
+
+.product_side {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product_link {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.product_link:hover {
+    text-decoration: underline;
+}
+
+.makereview {
+    margin-bottom: 40px;
+}
+
+.review_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review_input {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.review_label {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.review_area {
+    padding: 10px;
+    max-width: 1275px;
+    max-height: 200px;
+    outline: none;
+    border: 2px solid black;
+    box-shadow: 3px 3px #222;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    color: #4c51ff;
+    border: 2px solid #4c51ff;
+    box-shadow: 3px 3px #3e42cc;
+}
+
+.reviews {
+    border: 4px solid black;
+    box-shadow: 5px 5px #222;
+    padding: 20px 15%;
+}
+
+.review {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.review_title {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.review_text {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    padding-left: 15px;
+    border-left: 3px solid black;
+}
+
+.review_date {
+    color: #333333;
+    font-size: 1em;
 }

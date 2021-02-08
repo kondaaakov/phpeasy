@@ -38,17 +38,17 @@ function renderWrapper(id, name) {
 
     const closeElem = document.createElement('img');
     closeElem.classList.add('wrapper_close');
-    closeElem.src = './img/close.svg';
+    closeElem.src = '/img/close.svg';
     closeElem.addEventListener('click', () => removeEl('wrap'))
     wrapTop.appendChild(closeElem)
 
     const imgElem = document.createElement('img');
     imgElem.classList.add('wrapper_img');
-    imgElem.src = `./img/icons/${name}.svg`;
+    imgElem.src = `/img/icons/${name}.svg`;
     wrapBlock.appendChild(imgElem)
 
     const linkToPhoto = document.createElement('a');
-    linkToPhoto.href = `/home/?id=${id}`;
+    linkToPhoto.href = `gallery/?id=${id}`;
     linkToPhoto.classList.add('wrapper_link', 'btn');
     linkToPhoto.innerHTML = 'Перейти'
     wrapBlock.appendChild(linkToPhoto);
